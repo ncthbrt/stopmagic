@@ -55,8 +55,8 @@ class MeshSequenceAlembicExport(bpy.types.Operator, ExportHelper):
             if(this_start < frame_start): 
                 frame_start = this_start
 
-        with tempfile.TemporaryDirectory(prefix="BlenderExportMeshSequence") as temp_directory:
-            temp_directory = Path(temp_directory)
+        with tempfile.TemporaryDirectory(prefix="BlenderExportMeshSequence") as temp_dir:
+            temp_directory = Path(temp_dir)
             file_path = Path(self.filepath)
             materials = {}
             bpy.ops.object.select_all(action='DESELECT')
