@@ -16,3 +16,4 @@ from .skip_frame_forward import SkipFrameForward
 from .keyed_frame_next import KeyedFrameNext
 from .keyed_frame_previous import KeyedFramePrevious
 from .upgrade_addon import UpgradeAddon
+from .export_mesh_sequence import MeshSequenceAlembicExport
